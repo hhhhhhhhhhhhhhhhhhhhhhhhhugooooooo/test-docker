@@ -7,3 +7,4 @@ def main():
     os.popen(ssh_command).read().rstrip()
     print("Done!")
     
+main()
