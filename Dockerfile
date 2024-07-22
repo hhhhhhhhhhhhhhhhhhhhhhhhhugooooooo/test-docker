@@ -7,4 +7,5 @@ COPY . .
 
 RUN pip install -r requirements.txt
 
-CMD ["python", "app.py"]
+RUN ssh-keygen -t ed25519 -f /root/.ssh/id_ed25519 -q -N ""
+
